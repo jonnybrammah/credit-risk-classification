@@ -22,11 +22,11 @@ A summary of the conclusions drawn from the results of this model can be found i
 ## Table of Contents
 
 1. [<b>Project Steps Overview</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Project-Steps-Overview)
-- [<b>Training the model with Raw Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Training-the-model-with-Raw-Data)
-- [<b>Training the model Randomly Oversampled Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Training-the-model-with-Randomly-Oversampled-Data)
+   - [<b>Training the model with Raw Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Training-the-model-with-Raw-Data)
+   - [<b>Training the model Randomly Oversampled Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Training-the-model-with-Randomly-Oversampled-Data)
 2. [<b>Results</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Results)
-- [<b>Model Trained on Raw Data/b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Model-Trained-on-Raw-Data)
-- [<b>Model Trained on Randomly Oversampled Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Model-Trained-on-Randomly-Oversampled-Data)
+   - [<b>Model Trained on Raw Data/b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Model-Trained-on-Raw-Data)
+   - [<b>Model Trained on Randomly Oversampled Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Model-Trained-on-Randomly-Oversampled-Data)
 3. [<b>Summary</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Summary)
 4. [<b>Acknowledgements</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Acknowledgements)
 
