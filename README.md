@@ -34,6 +34,7 @@ A summary of the conclusions drawn from the results of this model can be found i
 
 ## Project Steps Overview
 
+
 ### Training the model with Raw Data
 
 Since the goal of this project was to categorize whether a loan was likely to be healthy or high-risk, this column was removed from the dataset, and stored as a y-variable. The remaining columns were stored as the X-variable.
@@ -50,6 +51,7 @@ _Table 1_
 The data was then split into training and testing sets in order to be able to assess its accuracy later.
 
 The logistic regression model was then trained on the training sets, and then evaluated using the testing set.
+
 
 
 ### Training the model with Randomly Oversampled Data
@@ -72,6 +74,7 @@ The same steps as above were then performed:
 -----
 
 ## Results
+
 
 ### Model Trained on Raw Data
 
@@ -100,6 +103,8 @@ This discrepancy in our accuracy in predicting healthy loans when compared to ou
 ![Logistic Regression Raw Data Accuracy](https://raw.githubusercontent.com/jonnybrammah/credit-risk-classification/main/Output/Raw_Data_Accuracy.png)
 
 _Please be aware that the scale for the y-axis begins at 50% to make the difference more visually apparent._
+
+
 
 ### Model Trained on Randomly Oversampled Data
 
