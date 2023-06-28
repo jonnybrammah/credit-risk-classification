@@ -30,6 +30,8 @@ A summary of the conclusions drawn from the results of this model can be found i
 3. [<b>Summary</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Summary)
 4. [<b>Acknowledgements</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Acknowledgements)
 
+</b>
+
 ----
 
 ## Project Steps Overview
