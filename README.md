@@ -32,9 +32,9 @@ A summary of the conclusions drawn from the results of this model can be found i
 
 ----
 
-### Project Steps Overview
+## Project Steps Overview
 
-#### Training the model with Raw Data
+### Training the model with Raw Data
 
 Since the goal of this project was to categorize whether a loan was likely to be healthy or high-risk, this column was removed from the dataset, and stored as a y-variable. The remaining columns were stored as the X-variable.
 
@@ -44,6 +44,7 @@ Looking at the data showed the number of healthy and high-risk loans was very un
 | --- | --- |
 | Healthy | 75,036 |
 | High-Risk | 2500 |
+
 _Table 1_
 
 The data was then split into training and testing sets in order to be able to assess its accuracy later.
@@ -51,7 +52,7 @@ The data was then split into training and testing sets in order to be able to as
 The logistic regression model was then trained on the training sets, and then evaluated using the testing set.
 
 
-#### Training the model with Randomly Oversampled Data
+### Training the model with Randomly Oversampled Data
 
 To overcome the potential errors that may stem from having such a significant imbalance in sample-size for healthy and high-risk loans, the RandomOverSampler function from the imblearn library was used. This deliberately randomly duplicates examples from the high-risk category, in order to make sure the model has equal data from both sets to train on.
 
@@ -61,6 +62,7 @@ After running the RandomOverSampler, you can see there are equal numbers of both
 | --- | --- |
 | Healthy | 56,277 |
 | High-Risk | 56,277 |
+
 _Table 2_
 
 The same steps as above were then performed:
@@ -69,9 +71,9 @@ The same steps as above were then performed:
 
 -----
 
-### Results
+## Results
 
-#### Model Trained on Raw Data
+### Model Trained on Raw Data
 
 The overall accuracy of the model trained on Raw Data was 99.24%, however this is a very unbalanced dataset, and simply predicting all loans as healthy would result in an accuracy score of almost 97%. To check the accuracy given this imbalance, a balanced accuracy score was created which was shown to be 94.43%, so still reasonably good but not as high as the simple accuracy score would imply.
 
@@ -81,6 +83,7 @@ The number of Healthy and High-Risk Loans vs what the model predicted they shoul
 | --- | --- | --- |
 | Actual Healthy | 18,679 | 80 |
 | Actual High-Risk | 67 | 558 |
+
 _Table 3_
 
 - This means we have a very high accuracy rate for predicting healthy loans (99.57%), and the precision and recall are both also 100%.
@@ -98,7 +101,7 @@ This discrepancy in our accuracy in predicting healthy loans when compared to ou
 
 _Please be aware that the scale for the y-axis begins at 50% to make the difference more visually apparent._
 
-#### Model Trained on Randomly Oversampled Data
+### Model Trained on Randomly Oversampled Data
 
 In this case, the accuracy for the model trained on the oversampled data was around 99.52%, with a balanced accuracy score of 99.52%, so already this model is clearly providing more useful categorization.
 
@@ -108,9 +111,16 @@ The number of Healthy and High-Risk Loans vs what this model predicted they shou
 | --- | --- | --- |
 | Actual Healthy | 18,668 | 91 |
 | Actual High-Risk | 2 | 623 |
+
 _Table 4_
 
 Based on this table, when compared to Table 3, above, you can see that there is a slight increase in healthy loans that are being misidentified as high-risk (from 80 to 91), but a significant decrease in the number of high-risk loans that are being misidentified as healthy (from 67 to only 2).
+
+This improvement in our accuracy in predicting high-risk loans can be seen in the following graph when compared to the previous graph::
+
+![Logistic Regression Raw Data Accuracy](https://raw.githubusercontent.com/jonnybrammah/credit-risk-classification/main/Output/Random_Oversampling_Accuracy.png)
+
+_Please be aware that the scale for the y-axis begins at 50% to make the difference more visually apparent._
 
 - As with the previous model, the precision and recall for the healthy loans are both very close to 100%, meaning that these loans are being predicted correctly almost all of the time.
 
