@@ -25,12 +25,12 @@ A summary of the conclusions drawn from the results of this model can be found i
    - [<b>Training the model with Raw Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Training-the-model-with-Raw-Data)
    - [<b>Training the model Randomly Oversampled Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Training-the-model-with-Randomly-Oversampled-Data)
 2. [<b>Results</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Results)
-   - [<b>Model Trained on Raw Data/b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Model-Trained-on-Raw-Data)
+   - [<b>Model Trained on Raw Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Model-Trained-on-Raw-Data)
    - [<b>Model Trained on Randomly Oversampled Data</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Model-Trained-on-Randomly-Oversampled-Data)
 3. [<b>Summary</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Summary)
 4. [<b>Acknowledgements</b>](https://github.com/jonnybrammah/credit-risk-classification/blob/main/README.md#Acknowledgements)
 
-</b>
+
 
 ----
 
@@ -50,6 +50,7 @@ Looking at the data showed the number of healthy and high-risk loans was very un
 
 _Table 1_
 
+
 The data was then split into training and testing sets in order to be able to assess its accuracy later.
 
 The logistic regression model was then trained on the training sets, and then evaluated using the testing set.
@@ -68,6 +69,7 @@ After running the RandomOverSampler, you can see there are equal numbers of both
 | High-Risk | 56,277 |
 
 _Table 2_
+
 
 The same steps as above were then performed:
 - The data was split into training and testing sets
@@ -90,6 +92,7 @@ The number of Healthy and High-Risk Loans vs what the model predicted they shoul
 | Actual High-Risk | 67 | 558 |
 
 _Table 3_
+
 
 - This means we have a very high accuracy rate for predicting healthy loans (99.57%), and the precision and recall are both also 100%.
 - This high recall means that the ratio of healthy loans to all predicted healthy loans is high, meaning very few healthy loans were misclassified as high-risk.
@@ -120,6 +123,7 @@ The number of Healthy and High-Risk Loans vs what this model predicted they shou
 | Actual High-Risk | 2 | 623 |
 
 _Table 4_
+
 
 Based on this table, when compared to Table 3, above, you can see that there is a slight increase in healthy loans that are being misidentified as high-risk (from 80 to 91), but a significant decrease in the number of high-risk loans that are being misidentified as healthy (from 67 to only 2).
 
